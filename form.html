@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <select name="pays-foo" id="pays-a">
+                <!-- la première option est choisie par défaut -->
+                <!-- on peut se servir de ce comportement pour rajouter un placeholder dans la première entrée -->
+                <option value="">Choisissez un pays</option>
+                <option value="Belgique">Belgique</option>
+                <option value="France">France</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- au lieu d'utiliser comme placeholder, on peut rajouter un label -->
+            <label for="pays-b">Choisissez un pays</label>
+            <select name="pays-bar" id="pays-b">
+                <option value="Belgique">Belgique</option>
+                <option value="France">France</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+        </div>
+
+        <div>
+            <select name="pays-baz" id="pays-c">
+                <option value="">Choisissez un pays</option>
+                <option value="Belgique">Belgique</option>
+                <option value="France">France</option>
+                <!-- l'attribut "selected" permet de choisir un élément avant même que l'utilisateur n'intervienne -->
+                <option selected value="Zimbabwe">Zimbabwe</option>
+            </select>
+        </div>
+
+        <div>
+            <div>Quels fruits voulez-vous ?</div>
+            <div>
+                <!-- avec les cases à cocher on peut faire du "choix multiple" -->
+                <label><input type="checkbox" name="fruits" id="fruits-ananas" value="ananas"> ananas</label>
+                <label><input type="checkbox" name="fruits" id="fruits-banane" value="bananes"> bananes</label>
+                <label><input type="checkbox" name="fruits" id="fruits-fraise" value="fraises"> fraises</label>
+            </div>
+        </div>
+
+        <div>
+            <div>Quel légume voulez-vous ?</div>
+            <div>
+                <!-- avec les bouton radio on ne peut faire que du "choix unique" -->
+                <label><input type="radio" name="legume" id="legume-carotte" value="carotte"> carotte</label>
+                <label><input type="radio" name="legume" id="legume-navet" value="navet"> navet</label>
+                <label><input type="radio" name="legume" id="legume-poireau" value="poireau"> poireau</label>
+            </div>
+        </div>
+
+        <div>
+            <!-- équivalent de la balise button -->
+            <!-- <input type="submit" value="OK"> -->
+            <button type="submit">OK</button>
+        </div>
+    </form>
+</body>
+</html>

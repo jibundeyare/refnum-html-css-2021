@@ -1,0 +1,24 @@
+#header-page {
+    font-size: 50px;
+}
+
+h1 {
+    color: pink;
+}
+
+h1 {
+    color: red;
+}
+
+article {
+    color: darkslategray;
+}
+
+.list-no-bullet-point {
+    list-style-type: none;
+    color: green;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}

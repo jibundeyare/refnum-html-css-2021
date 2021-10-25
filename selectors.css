@@ -1,0 +1,35 @@
+* {
+    color: darkslategray;
+}
+
+body {
+    color: darkslategray;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pink {
+    color: pink;
+}
+
+a[href*=".fr"] {
+    color: pink;
+}
+
+a[href^="http://example."] {
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-size: 28px;
+}
+
+h2 + p {
+    font-style: italic;
+}
