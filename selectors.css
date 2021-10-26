@@ -1,35 +1,64 @@
+/* ceci est un commentaire */
+
 * {
-    color: darkslategray;
+  color: darkslategray;
 }
 
 body {
-    color: darkslategray;
+  color: darkslategray;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .pink {
-    color: pink;
+  color: pink;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+a:visited {
+  font-style: italic;
 }
 
 a[href*=".fr"] {
-    color: pink;
+  color: pink;
 }
 
-a[href^="http://example."] {
-    font-weight: bold;
+a[href^="http://example."]
+{
+  font-weight: bold;
 }
 
-h2, h3 {
-    font-size: 28px;
+h2::before {
+  content: "<<< ";
+}
+
+h2::after {
+  content: " >>>";
+}
+
+h2,
+h3 {
+  font-size: 28px;
 }
 
 h2 + p {
-    font-style: italic;
+  font-style: italic;
+}
+
+h2 ~ p {
+  text-transform: uppercase;
 }

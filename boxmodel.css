@@ -1,0 +1,30 @@
+#boxmodel-content-box *,
+#boxmodel-content-box *:after,
+#boxmodel-content-box *:before {
+    /* box sizing par défaut
+    box sizing qui ne comprend ni la marge intérieure ni la bordure  */
+    box-sizing: content-box;
+}
+
+#boxmodel-border-box *,
+#boxmodel-border-box *:after,
+#boxmodel-border-box *:before {
+    /* box sizing qui comprend la marge intérieure et la bordure */
+    box-sizing: border-box;
+}
+
+#boxmodel-content-box .my-box {
+    background-color: pink;
+}
+
+#boxmodel-border-box .my-box {
+    background-color: lightgreen;
+}
+
+.my-box {
+    width: 500px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid #000000;
+    margin: 40px;
+}

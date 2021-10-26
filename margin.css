@@ -1,0 +1,19 @@
+.foo {
+    /* 20px de marge partout */
+    margin: 20px;
+    /* c'est la même chose que  */
+    margin: 20px 20px 20px 20px;
+
+    /* 20px de marge en haut et en bas
+    30px de marge à gauche et à droite */
+    margin: 20px 30px;
+    /* c'est la même chose que  */
+    margin: 20px 30px 20px 30px;
+
+    /* 20px de marge en haut
+    40px de marge en bas
+    30px de marge à gauche et à droite */
+    margin: 20px 30px 40px;
+    /* c'est la même chose que  */
+    margin: 20px 30px 40px 30px;
+}
