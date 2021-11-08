@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <form action="" method="post">
-        <div>
+        <div class="field-container">
             <select name="pays-foo" id="pays-a">
                 <!-- la première option est choisie par défaut -->
                 <!-- on peut se servir de ce comportement pour rajouter un placeholder dans la première entrée -->
@@ -19,9 +20,9 @@
             </select>
         </div>
 
-        <div>
+        <div class="field-container">
             <!-- au lieu d'utiliser comme placeholder, on peut rajouter un label -->
-            <label for="pays-b">Choisissez un pays</label>
+            <label class="label-for-select" cfor="pays-b">Choisissez un pays</label>
             <select name="pays-bar" id="pays-b">
                 <option value="Belgique">Belgique</option>
                 <option value="France">France</option>
@@ -29,7 +30,7 @@
             </select>
         </div>
 
-        <div>
+        <div class="field-container">
             <select name="pays-baz" id="pays-c">
                 <option value="">Choisissez un pays</option>
                 <option value="Belgique">Belgique</option>
@@ -39,9 +40,9 @@
             </select>
         </div>
 
-        <div>
-            <div>Quels fruits voulez-vous ?</div>
-            <div>
+        <div class="field-container">
+            <label>Quels fruits voulez-vous ?</label>
+            <div class="checkbox-container">
                 <!-- avec les cases à cocher on peut faire du "choix multiple" -->
                 <label><input type="checkbox" name="fruits" id="fruits-ananas" value="ananas"> ananas</label>
                 <label><input type="checkbox" name="fruits" id="fruits-banane" value="bananes"> bananes</label>
@@ -49,9 +50,9 @@
             </div>
         </div>
 
-        <div>
-            <div>Quel légume voulez-vous ?</div>
-            <div>
+        <div class="field-container">
+            <label>Quel légume voulez-vous ?</label>
+            <div class="radio-container">
                 <!-- avec les bouton radio on ne peut faire que du "choix unique" -->
                 <label><input type="radio" name="legume" id="legume-carotte" value="carotte"> carotte</label>
                 <label><input type="radio" name="legume" id="legume-navet" value="navet"> navet</label>
@@ -59,7 +60,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="field-container">
             <!-- équivalent de la balise button -->
             <!-- <input type="submit" value="OK"> -->
             <button type="submit">OK</button>
