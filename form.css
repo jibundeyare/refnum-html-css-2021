@@ -1,0 +1,35 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.field-container {
+   padding: 10px;
+   margin: 10px; 
+}
+
+.field-container > label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.checkbox-container > label,
+.radio-container > label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-container > label:last-of-type,
+.radio-container > label:last-of-type {
+    margin-right: 0px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.field-container > .label-for-select {
+    display: block;
+    margin-bottom: 10px;
+}
