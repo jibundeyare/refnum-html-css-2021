@@ -1,0 +1,24 @@
+#container1 {
+    background-color: orange;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#element1 {
+    background-color: lightcoral;
+    border: 5px solid darkred;
+    height: 100px;
+}
+
+#element2 {
+    background-color: lightskyblue;
+    border: 5px solid darkslategray;
+    height: 100px;
+}
+
+#element3 {
+    background-color: lightgreen;
+    border: 5px solid darkgreen;
+    height: 100px;
+}

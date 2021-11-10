@@ -1,0 +1,28 @@
+#element1 {
+    background-color: lightblue;
+    position: relative;
+}
+
+#element2 {
+    background-color: lightcoral;
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+
+#element3 {
+    background-color: pink;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+#element4 {
+    background-color: lightseagreen;
+    position: relative;
+    /* bottom et right sont équivalents à :
+    top: -5px;
+    left: -5px; */
+    bottom: 5px;
+    right: 5px;
+}

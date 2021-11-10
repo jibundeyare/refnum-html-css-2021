@@ -1,0 +1,49 @@
+body {
+    background-color: lightskyblue;
+}
+
+#element1 {
+    background-color: lightseagreen;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#element2 {
+    background-color: lightpink;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -10;
+}
+
+#element3 {
+    background-color: lightsalmon;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+#element4 {
+    background-color: lightsteelblue;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#sandclock {
+    background-color: green;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: 9999;
+}

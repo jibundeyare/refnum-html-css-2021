@@ -1,0 +1,25 @@
+header {
+    background-color: lightsalmon;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+nav {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+aside {
+    background-color: lightseagreen;
+    font-size: 3rem;
+    padding: 1rem;
+    position: fixed;
+    top: 10rem;
+    right: 5rem;
+}
+
+main {
+    margin-top: 7rem;
+}

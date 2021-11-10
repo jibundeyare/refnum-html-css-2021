@@ -1,0 +1,23 @@
+#element1 {
+    background-color: lightblue;
+    /* pas la peine de préciser le position static car c'est la valeur par défaut */
+    /* position: static; */
+}
+
+#element2 {
+    background-color: lightcoral;
+    /* pas la peine de préciser le position static car c'est la valeur par défaut */
+    /* position: static; */
+}
+
+#element3 {
+    background-color: pink;
+    /* pas la peine de préciser le position static car c'est la valeur par défaut */
+    /* position: static; */
+}
+
+#element4 {
+    background-color: lightseagreen;
+    /* pas la peine de préciser le position static car c'est la valeur par défaut */
+    /* position: static; */
+}

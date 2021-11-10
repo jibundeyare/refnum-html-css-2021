@@ -1,0 +1,37 @@
+/* affichez les 4 div sous forme d'un carré aux quatre coins de l'écran en utilisant position absolute */
+
+#element1 {
+    background-color: lightcoral;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#element2 {
+    background-color: lightgreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#element3 {
+    background-color: lightseagreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#element4 {
+    background-color: lightpink;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}

@@ -1,0 +1,60 @@
+#container1 {
+    background-color: darkslategray;
+    /* ici il n'y a pas de position relative
+    du coup tous les éléments contenus dans #container1 qui ont
+    un position absolute, auront des coordonnées calculées par rapport
+    au coin supérieur gauche de l'écran */
+}
+
+#container2 {
+    background-color: darkslateblue;
+    /* ici il y a un position relative
+    du coup tous les éléments contenus dans #container2 qui ont
+    un position absolute, auront des coordonnées calculées par rapport
+    au coin supérieur gauche du #container2 (et pas de l'écran) */
+    position: relative;
+}
+
+#element1 {
+    background-color: lightblue;
+}
+
+#element2 {
+    background-color: lightcoral;
+}
+
+#element3 {
+    background-color: pink;
+    /* les coordonnées de cet élément sont calculées par rapport au
+    coint supérieur gauche de l'écran car aucun élément le contient
+    n'a de position relative */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#element4 {
+    background-color: lightseagreen;
+}
+
+#element5 {
+    background-color: lightblue;
+}
+
+#element6 {
+    background-color: lightcoral;
+}
+
+#element7 {
+    background-color: pink;
+    /* les coordonnées de cet élément sont calculées par rapport au
+    coint supérieur gauche de l'élément le contenant car le contenant
+    a un position relative */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#element8 {
+    background-color: lightseagreen;
+}
