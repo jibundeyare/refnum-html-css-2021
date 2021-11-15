@@ -5,12 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo 9 table</title>
+    <link rel="stylesheet" href="exo-09-table.css">
 </head>
 <body>
     <h1>Exo 9 table</h1>
 
-    <table>
-        
+    <table class="super-table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Crédit</th>
+                <th>Newsletter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>lorem.ipsum@example.com</td>
+                <td>58</td>
+                <td>abonné</td>
+            </tr>
+            <tr>
+                <td>Sit</td>
+                <td>Dolor</td>
+                <td>sit.dolor@example.com</td>
+                <td>127</td>
+                <td>non abonné</td>
+            </tr>
+            <tr>
+                <td>Amet</td>
+                <td>Consectetur</td>
+                <td>amet.consectetur@example.com</td>
+                <td>1090</td>
+                <td>abonné</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="super-table__cell_empty" colspan="3" rowspan="2"></td>
+                <th>Moyenne</th>
+                <th>Abonnés</th>
+            </tr>
+            <tr>
+                <td>425</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>

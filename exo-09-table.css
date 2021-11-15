@@ -1,0 +1,44 @@
+.super-table {
+    border-collapse: collapse;
+    border: 3px solid darkslategray;
+}
+
+.super-table caption {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.super-table thead th,
+.super-table tbody td,
+.super-table tfoot th,
+.super-table tfoot td {
+    border: 1px solid darkslategray;
+    padding: 1rem;
+}
+
+.super-table thead tr,
+.super-table tfoot th {
+    background-color: #eeeeee;
+}
+
+.super-table tbody tr:nth-child(2n) {
+    background-color: lightsteelblue;
+}
+
+/* Quand la souris est au dessus d'une ligne (impair) de données ou au dessus d'une cellule de données dans le pied de page,
+la couleur devient plus foncée */
+.super-table tbody tr:nth-child(2n+1):hover,
+.super-table tfoot td:hover {
+    background-color: #cccccc;
+}
+
+/* Quand la souris est au dessus d'une ligne (pair) de données,
+la couleur devient plus foncée */
+.super-table tbody tr:nth-child(2n):hover {
+    background-color: lightseagreen;
+}
+
+.super-table__cell_empty {
+    background-color: #eeeeee;
+}
