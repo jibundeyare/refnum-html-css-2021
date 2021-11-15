@@ -1,0 +1,38 @@
+.simple-table {
+    /* On peut définir une bordure extérieure différente des bordures des cellules */
+    /* border: 3px solid darkslategray; */
+    /* On peut aussi définir une bordure extérieure de style différent pour chaque côté */
+    border-top: 3px solid red;
+    border-right: 3px solid green;
+    border-bottom: 3px solid blue;
+    border-left: 3px solid darkslategray;
+    border-collapse: collapse;
+    margin: 2rem;
+}
+
+.simple-table th {
+    border: 1px solid darkslategray;
+    padding: 2rem;
+}
+
+/* le code :nth-child(2n) désigne les lignes paires */
+.simple-table tr:nth-child(2n) {
+    background-color: pink;
+}
+
+/* le code :nth-child(2n+1) désigne les lignes impaires */
+.simple-table tr:nth-child(2n+1) {
+    background-color: lightblue;
+}
+
+/* Pour que l'entête soit transparent, il faut placer ce bloc après les autres
+C'est à cause d'un problème de spécificité
+Si on veut régler correctement de problème, il faut changer la structure du code html */
+.simple-table tr:first-child {
+    background-color: transparent;
+}
+
+.simple-table td {
+    border: 1px solid darkslategray;
+    padding: 2rem;
+}
