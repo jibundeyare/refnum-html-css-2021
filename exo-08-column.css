@@ -1,0 +1,18 @@
+/* reproduisez la mise en page des photos de Pinterest */
+
+.column-container {
+    columns: 6;
+    /* la valeur par défaut est 1em */
+    column-gap: 2rem;
+}
+
+figure {
+  /* le display inline-block empêche que la légende se retrouve dans la colonne suivante */
+  display: inline-block;
+  margin: 0 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+

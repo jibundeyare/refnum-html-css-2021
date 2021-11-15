@@ -1,0 +1,56 @@
+/* exo 4 flexbox centrage horizontal
+
+Vous devez réaliser une intégration HTML CSS de la maquette exo-04-wireframe-header.png */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header__title {
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+a:hover.header__title {
+    color: black;
+    text-decoration: underline;
+}
+
+.header__title-container {
+    margin: 50px 0;
+}
+
+.header__logo {
+    position: relative;
+    top: 15px;
+    margin-right: 0.5rem;
+}
+
+.header__banner {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.header__banner_transparent {
+    opacity: 0.5;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.footer__link {
+    color: lightsalmon;
+    font-size: 24px;
+}
+
+.footer__link_active {
+    color: red;
+    font-size: 24px;
+}
