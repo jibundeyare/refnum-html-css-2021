@@ -36,3 +36,48 @@ Si on veut régler correctement de problème, il faut changer la structure du co
     border: 1px solid darkslategray;
     padding: 2rem;
 }
+
+.simple-table td:nth-child(3n) {
+    text-align: right;
+}
+
+.super-table {
+    border-collapse: collapse;
+    border: 3px solid darkslategray;
+}
+
+.super-table caption {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.super-table thead th,
+.super-table tbody td,
+.super-table tfoot th,
+.super-table tfoot td {
+    border: 1px solid darkslategray;
+    padding: 1rem;
+}
+
+.super-table thead tr,
+.super-table tfoot th {
+    background-color: #eeeeee;
+}
+
+.super-table tbody tr:nth-child(2n) {
+    background-color: rgba(135, 206, 250, .75);
+}
+
+/* Quand la souris est au dessus d'une ligne (impair) de données ou au dessus d'une cellule de données dans le pied de page,
+la couleur devient plus foncée */
+.super-table tbody tr:nth-child(2n+1):hover,
+.super-table tfoot td:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/* Quand la souris est au dessus d'une ligne (pair) de données,
+la couleur devient plus foncée */
+.super-table tbody tr:nth-child(2n):hover {
+    background-color: rgba(135, 206, 250, 1);
+}

@@ -9,6 +9,6 @@ Sit,Dolor,sit.dolor@example.com,127,0
 Amet,Consectetur,amet.consectetur@example.com,1090,1
 ```
 
-Pour la newsletter, au lieu d'afficher, affichez `abonné` ou `non abonné`.
+Pour la newsletter, au lieu d'afficher `1` ou `0`, affichez respectivement `abonné` ou `non abonné`.
 
 Dans le pied de page du tableau, affichez la moyenne de la colonne `credit` et le total de la colonne `neweletter`.
